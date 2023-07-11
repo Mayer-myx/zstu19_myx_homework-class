@@ -1,0 +1,25 @@
+﻿生成启动时间为 2013/12/18 22:46:25。
+     1>项目“C:\Users\NewiPeak\Desktop\二叉树\二叉树\二叉树.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\二叉树.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "二叉树.cpp"
+         二叉树.cpp
+     1>c:\users\newipeak\desktop\二叉树\二叉树\二叉树.cpp(15): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>c:\users\newipeak\desktop\二叉树\二叉树\二叉树.cpp(36): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\NewiPeak\Desktop\二叉树\Debug\二叉树.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\二叉树.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\NewiPeak\Desktop\二叉树\Debug\二叉树.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\NewiPeak\Desktop\二叉树\Debug\二叉树.lib" /MACHINE:X86 "Debug\二叉树.obj"
+         LINK : 没有找到 C:\Users\NewiPeak\Desktop\二叉树\Debug\二叉树.exe 或上一个增量链接没有生成它；正在执行完全链接
+         二叉树.vcxproj -> C:\Users\NewiPeak\Desktop\二叉树\Debug\二叉树.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\NewiPeak\Desktop\二叉树\Debug\二叉树.exe;#1" /manifest "Debug\二叉树.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Debug\二叉树.unsuccessfulbuild”。
+         正在对“Debug\二叉树.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\NewiPeak\Desktop\二叉树\二叉树\二叉树.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.39
