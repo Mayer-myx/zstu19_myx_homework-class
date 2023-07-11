@@ -1,0 +1,3 @@
+maven：https://blog.csdn.net/qq_38190185/article/details/115921070
+java：https://blog.csdn.net/weixin_37601546/article/details/88623530
+按里面的步骤即可，maven和java版本不需要改动，此版本可运行慕测的eclipse
