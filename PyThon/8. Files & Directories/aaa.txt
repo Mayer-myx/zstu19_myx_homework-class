@@ -1,0 +1,21 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 0E50-B3B7
+
+ Directory of C:\Users\latitude\Python programming@ZSTU by Laitude\8. Files & Directories
+
+2018/11/14  08:53    <DIR>          .
+2018/11/14  08:53    <DIR>          ..
+2018/11/07  23:33    <DIR>          .ipynb_checkpoints
+2018/11/06  16:40            24,448 1.png
+2018/11/06  22:15            26,124 2.png
+2018/11/06  23:26           167,286 3.png
+2018/11/07  21:10            19,391 4.png
+2018/11/07  21:28            72,233 5.png
+2018/11/07  23:27               788 aaa.txt
+2005/10/09  12:48            23,552 course.xls
+2018/11/06  16:27                83 demo.txt
+2018/11/14  08:52           424,201 Files & Directories.ipynb
+2018/11/14  08:53                 0 kkk.txt
+2018/11/14  08:39                53 sample.txt
+              11 File(s)        758,159 bytes
+               3 Dir(s)  32,697,913,344 bytes free

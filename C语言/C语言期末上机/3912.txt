@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char s[100];
+    int i,len,t=1,m;
+    gets(s);
+    len=strlen(s);
+    for(i=0;i<len;i++)
+    {
+    	if(s[i]!=' ')
+    	{
+		m=i;
+    	break;
+    	}
+    }
+    for(i=m;i<len;i++)
+    {
+    	if(s[i]==' '&&(s[i+1]>='a'&&s[i+1]<='z'||s[i+1]>='A'&&s[i+1]<='Z'))
+    	t++;
+    }
+    if(len!=0)
+    {printf("%d\n",t);}
+    else
+	{printf("%d\n",t-1);}
+}
