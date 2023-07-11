@@ -1,0 +1,337 @@
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%{
+    \documentclass[twoside,11pt]{article}
+    %%%%% PACKAGES %%%%%%
+    \usepackage{pgm2016}
+    \usepackage{amsmath}
+    \usepackage{algorithm}
+    \usepackage[noend]{algpseudocode}
+    \usepackage{subcaption}
+    \usepackage[english]{babel}	
+    \usepackage{paralist}	
+    \usepackage[lowtilde]{url}
+    \usepackage{fixltx2e}
+    \usepackage{listings}
+    \usepackage{color}
+    \usepackage{indentfirst}
+    \usepackage{float}
+    %\usepackage{hyperref}
+    
+    \usepackage{auto-pst-pdf}
+    \usepackage{pst-all}
+    \usepackage{pstricks-add}
+    
+	\usepackage{comment}
+	\usepackage{fancybox}
+    %%%%% MACROS %%%%%%
+    \algrenewcommand\Return{\State \algorithmicreturn{} }
+    \algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
+    \renewcommand{\thesubfigure}{\roman{subfigure}}
+    \setlength{\parindent}{2em}
+    \definecolor{codegreen}{rgb}{0,0.6,0}
+    \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+    \definecolor{codepurple}{rgb}{0.58,0,0.82}
+    \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+    \lstdefinestyle{mystyle}{
+       backgroundcolor=\color{backcolour},  
+       commentstyle=\color{codegreen},
+       keywordstyle=\color{magenta},
+       numberstyle=\tiny\color{codegray},
+       stringstyle=\color{codepurple},
+       basicstyle=\footnotesize,
+       breakatwhitespace=false,        
+       breaklines=true,                
+       captionpos=b,                    
+       keepspaces=true,                
+       numbers=left,                    
+       numbersep=5pt,                  
+       showspaces=false,                
+       showstringspaces=false,
+       showtabs=false,                  
+       tabsize=2
+    }
+    \lstset{style=mystyle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHANGE HERE %%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% {
+\newcommand\course{62952}
+\newcommand\courseName{Introduction to Service of Outsourcing}
+\newcommand\semester{Fall 2021}
+\newcommand\assignmentNumber{1}                             % <-- ASSIGNMENT #
+\newcommand\studentName{Mei Yuxin}                  % <-- YOUR NAME
+\newcommand\studentEmail{2019329621004@zstu.edu.cn}          % <-- YOUR NAME
+\newcommand\studentNumber{20193296329621004}                % <-- STUDENT ID #
+\newcommand\studentClass{Computer Sci/Tec 19(1)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%{
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newenvironment{boxedlaw}[1]
+{\begin{Sbox}\begin{minipage}{#1‎}‎\setcounter{mpfootnote}{\value{footnote}}}
+		{\end{minipage}\end{Sbox}\begin{center}\shadowbox{\TheSbox}
+		\setcounter{footnote}{\value{mpfootnote}}\end{center}}
+
+\renewcommand*\thempfootnote{\fnsymbol{mpfootnote}}
+
+\ShortHeadings{Zhejiang Sci-Tech University -  \course ~~ \courseName}{\studentName - \studentNumber}
+    \firstpageno{1}
+    
+    \begin{document}
+    	
+\begin{boxedlaw}{\textwidth}
+	\vspace*{2mm}\textbf{Assignment \assignmentNumber\footnote{Sep. 12th, 2021 }:} ACT-R (Adaptive Character of Thought-Rational) is a cognitive behavioral architecture and a theoretical model of human cognitive mechanism. Its research purpose is to finally reveal the law of thought movement that humans organize knowledge and produce intelligent behavior.\\ 
+	\vspace*{2mm}\textbf{ Note:} Human-computer interaction mainly studies the relationship between human cognitive models and information processing processes and human interaction behaviors, and studies how to design, implement and evaluate interactive computing systems based on user tasks and activities. As computing technology is the basic technology of information products, Therefore, the way of human-computer interaction often plays a decisive role in the way of human-computer interaction.This human-computer interaction experiment calls the ACT-R model to realize the target module, visual module, action module and descriptive knowledge module, and explain the theory of the working mechanism of the human cognitive process.\\
+	\vspace*{1mm}\textbf{ Warning:} Please do not  plagiarize.
+\end{boxedlaw}
+	\title{Human-computer Interaction Experiment Report}
+
+\author{\name \studentName \email \studentEmail \\
+	\studentNumber \class  \studentClass
+	\addr 
+}
+    
+    \maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+
+Human-Computer Interaction (HCI) is an academic field of human-computer interaction design and evaluation. It is a cross-discipline of computer and psychology, and it can also be regarded as a branch of computer. It studies the theory, technology and equipment of information transfer between humans and machines, including technical research (including algorithms, hardware technology, etc.) and psychological research.
+
+
+The history of the development of human-computer interaction is the history of the development of humans adapting to computers to the continuous adaptation of computers to humans. Interactive information has also changed from accurate input and output information to imprecise input and output information.
+
+
+The development of human-computer interaction technology has a direct connection with the development of the national economy. It is a technical threshold for integrating information technology into society, reaching into groups, and reaching a wide range of applications. The birth of any new interactive technology will bring its new application population, new application fields, and bring huge social and economic benefits.
+
+
+In modern and future societies, as long as people use information processing technologies such as communications and computers for social activities, human-computer interaction is an eternal theme.
+
+\section{Experimental purpose}
+\label{sec:background}
+
+%%EXAMPLE EQUATION
+
+Through this experiment, students can understand the basic knowledge of human-computer interaction, learn how to run ACT-R in Pycharm according to the model given by the teacher, and write their own programs to complete the functional requirements given by the teacher.
+
+
+\section{Experimental Requirements}
+\label{rt}
+
+QY cognitive and Decision modeling simulation, Main functional modules: 
+Cognitive and Decision modeling and simulation platform software consists of six main functional modules: user information maintenance, knowledge representation and parameter determination meaning, cognitive behavior analysis module, cognitive modeling module, model operation simulation and performance evaluation, etc.
+
+\subsection{User information maintenance}
+
+
+After logging in, users can select user information maintenance in the menu. Since this software is mainly used for cognitive characteristics and related research, users maintain information about personal cognitive characteristics in their personal information, such as gender, date of birth, personality characteristics, blood type, vision, handedness, etc. After clicking save, the personal information is saved in JSON format in the system, which can be used for modification and supplement.
+
+
+\subsection{The essay states the knowledge and parameter definitions}
+
+
+This module defines the concepts/declarative knowledge used in the model, similar to the definition of variables in programming. These concepts will be used in the model to determine the current state, in order to trigger the knowledge according to the state and enter the new state. Water, temperature, etc.
+
+
+Declarative knowledge can be defined with reference to the types of Python language variables, such as water-string, temperature-float.
+
+
+Definition of model parameters According to the model needs to define the parameters used by the model, such as the power of the electric furnace, the tool that can boil water, etc.
+
+
+The definition of cognitive parameters is the cognitive characteristic parameters of the research objects concerned by users, such as the activation level of knowledge.
+
+
+\subsection{Cognitive behavioral analysis}
+
+
+There are two ways to analyze the cognitive behavior of research objects: one is manual modeling, the other is auxiliary video analysis modeling.
+
+
+Manual modeling: Build process knowledge directly, i.e., if... Then... Rules to directly construct task cognitive-behavioral descriptions.
+
+
+Auxiliary video analysis modeling: according to the given video, the computer aided analysis of cognitive behavior, users in cognitive behavior point construction build user behavior status and state knowledge.
+
+
+\subsection{Cognitive Modeling}
+
+
+The above stated knowledge and parameter definitions, and the collected information in the cognitive behavior analysis stage will automatically generate the cognitive behavior model file.
+
+
+In the cognitive modeling stage, users can browse the above cognitive model files and modify and improve multiple model files. By modifying and the first improvement is to make the built model meet the user modeling requirements, and at the same time meet the actual behavior requirements at runtime. Here you can manually adjust parameters, add and delete knowledge according to the modeling specification.
+
+
+The structure of the model includes model parameters, declarative knowledge definition, process knowledge, etc., which can be referred to the STRUCTURE of THE ACT-R model.
+
+
+\subsection{run simulation model}
+
+
+Model operation means that the software executes the cognitive behavior model according to the design interpretation of the cognitive system, based on the basic false of the cognitive system.
+
+
+Suppose the whole process of user cognitive behavior simulation, including perception, decision-making, knowledge learning and searching, conflict resolution and user movement, etc.
+
+
+The running process of the model is also the process of model evaluation. If the model behavior and the actual behavior are always in the core of the cognitive fragment, then it can be said that the model realizes the cognitive behavior simulation of the modeling object and constructs the cognitive behavior model of the research object.
+
+
+Multi-task collaborative decision is implemented by message communication between multiple copies of software (mechanism to be determined).
+
+
+\subsection{Performance evaluation}
+
+
+The function of cognitive system module design is consistent with the function of human brain region, and the activity time of cognitive system module corresponds to the activity time of brain region. Statistical module activity time or the proportion of module activity time can be used to evaluate the activity situation or cognitive load in brain area, so as to make the evaluation of task cognitive performance.
+
+
+\section{Experimental result}
+\label{rt}
+
+
+\subsection{Program Code}
+
+%\newpage %goes to a new page
+
+
+This is the core calling part of the code(ACT-R):
+
+
+%% EXAMPLE ALGORITHM
+\begin{lstlisting}[language=python]
+import sys
+import os
+import ACT.actr as actr
+from PyQt5 import QtWidgets
+from cogmod import Ui_SideBarDemo
+
+class __Autonomy__(object):
+    def __init__(self):
+        self._buffer = ""
+
+    def write(self, out_stream):
+        self._buffer += out_stream
+
+class HCI_TEST02(QtWidgets.QWidget, Ui_SideBarDemo):
+    def __init__(self):
+        super(HCI_TEST02, self).__init__()
+        self.setupUi(self)
+        self.pushButton.clicked.connect(self.run_model)
+
+    def run_model(self):
+        savedStdout = sys.stdout
+        read = __Autonomy__()
+        sys.stdout = read
+        actr.load_act_r_code('D:/ai/ACT-R/tutorial/unit1/count.lisp')
+        actr.run(10)
+        sys.stdout = savedStdout
+        self.textBrowser.setText(read._buffer.__str__())
+        self.textBrowser.ensureCursorVisible()
+        # os.popen("taskkill /f /t /im act-r.exe")
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+
+    HCI_test02 = HCI_TEST02()
+    HCI_test02.show()
+    sys.exit(app.exec_())
+\end{lstlisting}
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p1.png}
+		\caption{ACT-R result and project structure.}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+
+\subsection{Experimental process pictures}
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p2.png}
+		\caption{login interface}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p5.png}
+		\caption{System parameter interface}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p7.png}
+		\caption{Statement of Knowledge Interface}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p8.png}
+		\caption{Manual modeling interface}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p9.png}
+		\caption{Video analysis interface}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p10.png}
+		\caption{ACT-R generation interface}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+    \begin{center}
+    	\includegraphics[width=0.7\columnwidth]{figures/p14.png}
+		\caption{Call ACT-R successfully}
+		\label{fig:deri}
+    \end{center}
+\end{figure}
+
+\section{Conclusion}
+\label{sec:conc}
+
+Through this experiment, I have mastered the Qt designer interface design method, learned cognitive modeling in the field of artificial intelligence, and have a certain grasp of python programming knowledge. I realize that ACT-R is a cognitive framework to simulate and understand the theory of human cognition. ACT-R tries to understand how humans organize knowledge and produce intelligent behaviors. The goal of ACT-R is to enable the system to perform various human cognitive tasks, such as capturing human perceptions, thoughts, and behaviors.
+
+%% HERE IS WHERE THE REFERENCES IS INCLUDED
+%% TO ADD NEW ONES, GO TO THE FILE references.bib IN THE REFERENCES FOLDER AND ADD IN bibtex FORMAT
+\vskip 0.2in
+\bibliography{references/references} 
+
+[1]Michael Anton Palkovics, Martin Takáč Exploration of cognition–affect and Type 1–Type 2 dichotomies in a computational model of decision making[J]  Cognitive Systems Research, 2016, 40
+
+[2]Jean-Charles Bornard, Matthew Sassman, Thierry Bellet Use of a computational simulation model of drivers’ cognition to predict decision making and behaviour while driving[J]  Biologically Inspired Cognitive Architectures, 2016, 15
+
+
+
+\end{document}
+
+ 

@@ -1,0 +1,371 @@
+﻿【例7.1】 
+
+DELIMITER //
+
+DELIMITER ;
+
+
+【例7.2】 
+
+DELIMITER $$
+CREATE PROCEDURE P_withoutParameters()
+BEGIN
+    SELECT 'Network Engineering';
+END $$
+DELIMITER ;
+
+CALL P_withoutParameters;
+
+
+【例7.3】 
+
+DELIMITER $$
+CREATE PROCEDURE P_Name(IN v_teacherno char(6))
+    /*创建带参数的存储过程, v_teacherno为输入参数*/
+BEGIN
+    SELECT tname FROM teacher WHERE teacherno=v_teacherno;
+END $$
+DELIMITER ;
+
+CALL P_Name('100004');
+
+
+【例7.4】 
+
+DELIMITER $$
+CREATE PROCEDURE P_Math(OUT v_gde char(20))
+BEGIN
+    DECLARE v_avg decimal(4,2);
+    SELECT AVG(grade) INTO v_avg
+    FROM student a, course b, score c
+    WHERE a.studentno=c.studentno AND b.courseno=c.courseno AND cname='高等数学';
+    IF v_avg >80 THEN
+        SET v_gde='高等数学成绩良好';
+    ELSE 
+        SET v_gde='高等数学成绩一般'; 
+    END IF;
+END $$
+DELIMITER ;
+
+CALL P_Math(@gde);
+SELECT @gde;
+
+
+
+【例7.5】 
+
+DELIMITER $$
+CREATE PROCEDURE P_title(IN v_teacherno char(6), OUT v_type char(10))
+BEGIN
+    DECLARE v_str char(12);
+    SELECT title INTO v_str FROM teacher WHERE teacherno= v_teacherno;
+    CASE v_str
+        WHEN '教授' THEN SET v_type='高级职称';
+        WHEN '副教授' THEN SET v_type='高级职称';
+        WHEN '讲师' THEN SET v_type='中级职称';
+        WHEN '助教' THEN SET v_type='初级职称';  
+        ELSE SET v_type:='Nothing';
+    END CASE;
+END $$
+DELIMITER ;
+
+CALL P_title('100004', @type);
+SELECT @type;
+
+
+【例7.6】 
+
+DELIMITER $$
+CREATE PROCEDURE P_integerSum(OUT v_sum1 int)
+BEGIN
+    DECLARE v_n int DEFAULT 1;
+    DECLARE v_s int DEFAULT 0;
+    WHILE v_n<=100 DO
+        SET v_s=v_s+v_n;
+        SET v_n=v_n+1;
+    END WHILE;
+    SET v_sum1=v_s;
+END $$
+DELIMITER ;
+
+CALL P_integerSum(@sum1);
+SELECT @sum1;
+
+
+
+【例7.7】
+
+DELIMITER $$
+CREATE PROCEDURE P_oddSum(OUT v_sum2 int)
+BEGIN
+    DECLARE v_n int DEFAULT 1;
+    DECLARE v_s int DEFAULT 0;
+    REPEAT
+        IF MOD(v_n, 2)<>0 THEN 
+            SET v_s=v_s+v_n;
+        END IF;
+        SET v_n=v_n+1;
+        UNTIL v_n>100
+    END REPEAT;
+    SET v_sum2=v_s;
+END $$
+DELIMITER ;
+
+CALL P_oddSum(@sum2);
+SELECT @sum2;
+
+
+【例7.8】 
+
+DELIMITER $$
+CREATE PROCEDURE P_factorial(OUT v_prod int)
+BEGIN
+    DECLARE v_n int DEFAULT 1;
+    DECLARE v_p int DEFAULT 1;
+    label:LOOP
+        SET v_p:=v_p*v_n;
+        SET v_n=v_n+1;  
+        IF v_n>10 THEN
+            LEAVE label;
+        END IF;
+    END LOOP label;
+    SET v_prod=v_p;
+END $$
+DELIMITER ;
+
+CALL P_factorial(@prod);
+SELECT @prod;
+
+
+【例7.9】 
+
+DELIMITER $$
+CREATE PROCEDURE P_teacherRow(OUT v_rows int)
+BEGIN
+    DECLARE v_teacherno char(6);
+    DECLARE found boolean DEFAULT TRUE;
+    DECLARE CUR_teacher CURSOR FOR SELECT teacherno FROM teacher;
+    DECLARE CONTINUE HANDLER FOR NOT found
+    SET found=FALSE;
+    SET v_rows=0;
+    OPEN CUR_teacher;
+    FETCH CUR_teacher into v_teacherno;
+    WHILE found DO 
+        SET v_rows=v_rows+1;
+        FETCH CUR_teacher INTO v_teacherno;
+    END WHILE;
+    CLOSE CUR_teacher;
+END $$
+DELIMITER ;
+
+CALL P_teacherRow(@rows);
+SELECT @rows;
+
+
+【例7.10】 
+
+DELIMITER $$
+CREATE PROCEDURE P_insertTeacher()
+BEGIN
+    INSERT INTO teacher VALUES('100015','程博','男','1982-02-26', NULL, NULL);   
+    SELECT * FROM teacher WHERE teacherno='100015';
+END $$
+DELIMITER ;
+
+CALL P_insertTeacher();
+
+
+【例7.11】 
+
+DELIMITER $$
+CREATE PROCEDURE P_updateTeacherTitle(IN v_teacherno char(6), IN v_title char(12), IN v_school char(12))
+BEGIN
+    UPDATE teacher SET title=v_title, school=v_school WHERE teacherno=v_teacherno;  
+    SELECT * FROM teacher WHERE teacherno='100015';
+END $$
+DELIMITER ;
+
+CALL P_updateTeacherTitle('100015', '副教授', '计算机学院');
+
+
+
+【例7.12】 
+
+DELIMITER $$
+CREATE PROCEDURE P_deleteTeacher(IN v_teacherno char(6), OUT v_msg char(8))
+BEGIN
+    DELETE FROM teacher WHERE teacherno=v_teacherno;
+    SET v_msg='删除成功';  
+END $$
+DELIMITER ;
+
+CALL P_deleteTeacher('191005', @msg);
+SELECT @msg;
+
+
+【例7.13】 
+
+DROP PROCEDURE P_insertTeacher;
+
+
+【例7.14】
+
+DELIMITER $$
+CREATE FUNCTION F_teacherSchool(v_teacherno char(6))
+    RETURNS char(12)
+    DETERMINISTIC
+BEGIN
+    RETURN(SELECT school FROM teacher WHERE teacherno=v_teacherno);
+END $$
+DELIMITER ;
+
+
+【例7.15】 
+
+SELECT F_teacherSchool('800023');
+
+
+【例7.16】 
+
+DROP FUNCTION IF EXISTS F_teacherSchool;
+
+
+
+【例7.17】
+
+CREATE TRIGGER T_insertScoreRecord AFTER INSERT
+    ON score FOR EACH ROW SET @str='正在插入记录';
+
+INSERT INTO score
+    VALUES('198001','1004 ',92);
+
+SELECT @str;
+
+
+【例7.18】 
+
+CREATE TRIGGER T_inserTeacherRecord AFTER INSERT
+    ON teacher FOR EACH ROW SET @str1=NEW.tname;
+
+INSERT INTO teacher
+    VALUES('800009','傅茜 ','女','1984-11-07','副教授','数学学院');
+
+SELECT @str1;
+
+
+【例7.19】
+
+DELIMITER $$
+CREATE TRIGGER T_updateTeacherLecture AFTER UPDATE
+    ON teacher FOR EACH ROW
+BEGIN
+    UPDATE lecture SET teacherno=NEW.teacherno WHERE teacherno=OLD.teacherno;
+END $$
+DELIMITER ;
+
+UPDATE teacher SET teacherno='120032' WHERE teacherno='120037';
+SELECT * FROM lecture WHERE teacherno='120032';
+
+
+【例7.20】 
+
+DELIMITER $$
+CREATE TRIGGER T_deleteTeacherLecture AFTER DELETE
+    ON teacher FOR EACH ROW
+BEGIN
+    DELETE FROM lecture WHERE teacherno=OLD.teacherno;
+END $$
+DELIMITER ;
+
+
+DELETE FROM teacher WHERE teacherno='400012';
+SELECT * FROM lecture WHERE teacherno='400012';
+
+【例7.21】 
+DROP TRIGGER T_inserTeacherRecord;
+
+
+【例7.22】
+
+CREATE EVENT E_immediate
+    ON SCHEDULE AT NOW()
+    DO
+    CREATE TABLE realtimetb(timeline timestamp);
+
+SHOW TABLES;
+SELECT * FROM realtimetb;
+
+
+【例7.23】
+
+CREATE EVENT E_insertRealtimetb
+    ON SCHEDULE EVERY 3 SECOND
+    DO
+    INSERT INTO realtimetb VALUES(current_timestamp);
+
+SELECT * FROM realtimetb;    
+
+
+【例7.24】
+
+DELIMITER $$
+CREATE EVENT E_startMonths
+    ON SCHEDULE EVERY 1 MONTH
+    STARTS CURDATE()+INTERVAL 1 MONTH
+    ENDS '2021-12-31'
+    DO
+    BEGIN
+        TRUNCATE TABLE realtimetb;
+    END $$
+DELIMITER ;
+
+
+【例7.25】
+
+ALTER EVENT E_startMonths
+    RENAME TO E_firstMonths;
+
+
+【例7.26】
+
+DROP EVENT E_firstMonths;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
