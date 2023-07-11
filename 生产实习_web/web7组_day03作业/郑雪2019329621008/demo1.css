@@ -1,0 +1,163 @@
+.wrap{
+    width: 100%;
+}
+@media screen and (min-width: 992px){
+
+    .left{
+        width: 300px;
+        height: 500px;
+        background-color: #6ecadc;
+    }
+    .left h3{
+        color: #fff;
+    }
+    .left,.right{
+        float: left;
+    }
+    .left_1 h3{
+        text-align: center;
+    }
+    .left_1 div{
+        border: 3px solid #fff;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+    }
+    .left_2{
+        margin-left:50px ;
+    }
+    .right a{
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+    }
+    .right_1{
+        margin-top: 20px;
+    }
+    .contact{
+        width: 120px;
+        height: 30px;
+        background-color: #6ecadc;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .name input{
+        width: 400px;
+        height: 30px;
+        margin-left: 50px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+    #name_1{
+        margin-top: 30px;
+    }
+    .message input{
+        width: 400px;
+        height: 170px;
+        line-height: 30px;
+        margin-left: 50px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+    .name button{
+        width: 70px;
+        height: 30px;
+        background-color: orange;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .left{
+        width: 100%;    
+        background-color: #6ecadc;
+    }
+    .left h3{
+        color: #fff;
+    }
+    .left_1 div{
+        border: 3px solid #fff;
+        /*margin: 0 auto;*/
+        width: 150px;
+        height: 150px;
+        
+    }
+    .left_1,.left_2{
+        float: left;
+        margin-left: 20px;
+    }
+    .left_2{
+        margin-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .left_2 p{
+        margin-top: 0;
+    }
+    .left_2 h3{
+        margin-bottom: 0;
+    }
+    .right_1{
+        margin: 20px 0 30px 0;
+    }
+    .right a{
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+    .contact{
+        width: 120px;
+        height: 30px;
+        background-color: #6ecadc;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    .name input{
+        width: 400px;
+        height: 30px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    #name_1 input{
+        margin-top: 30px;
+    }
+    .message input{
+        width: 400px;
+        height: 130px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .name button{
+        width: 70px;
+        height: 30px;
+        background-color: orange;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+.clearFloat:after{
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearFloat{
+    zoom: 1;
+}

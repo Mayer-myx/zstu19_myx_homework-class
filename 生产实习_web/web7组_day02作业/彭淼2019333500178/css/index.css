@@ -1,0 +1,120 @@
+.wrap{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.header,.nav,.banner,.content,.study,.ge,.center,.footer{
+    width: 1000px;
+    /*height: 200px;*/
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.header .logo,.header .search,.header .icon{
+    float: left;
+}
+.logo img{
+    width: 127px;
+}
+.search div{
+    float: left;
+}
+.search input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    padding-left: 4px;
+}
+.header .search{
+    margin-left: 100px;
+    margin-top: 6px;
+}
+.icon p{
+    float: left;
+    width: 70px;
+    height: 20px;
+    border-right: 1px solid #e3e3e3;
+    text-align: center;
+}
+.search img{
+    cursor: pointer;
+    /*设置光标样式*/
+}
+.icon p a{
+    color: #bbb;
+    font-size: 14px;
+}
+.header .icon{
+    margin-top: 10px;
+}
+.login{
+    border-right-width: 0 ;
+    /*右边框线宽度*/
+
+}
+.nav a{
+    margin-right: 50px;
+    font-size: 16px;
+    color: #bbb;
+}
+.nav .active{
+    color: #0aa1ed;
+}
+.content div{
+    width: 326px;
+    height: 245px;
+    float: left;
+}
+.content .con1{
+    background-color: #1fa2ea;
+}
+.content .con2{
+    background-color: #c5fad8;
+    margin-right: 11px;
+    margin-left: 11px;
+}
+.content .con3{
+    background-color: #e69ba9;
+}
+.study h3,.study p{
+    float: left;
+}
+.study p{
+    background-color:#000 ;
+    color: #fff;
+    padding: 0 15px;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+.ge div{
+    float: left;
+}
+.ge .r_1{
+    background-color: #e8e8e8;
+    margin-right: 10px;
+}
+.ge p{
+    background-color: #e8e8e8;
+}
+.r-1 {
+    margin-bottom: 6px;
+}
+.center div{
+    width: 250px;
+    height: 110px;
+    float: left;
+    text-align: center;
+}
+.footer .footer_1,.footer .footer_2,.footer .footer_3{
+    float: left;
+}
+.footer_2 ul{
+    float: left;
+}
+.footer_2 ul li{
+    margin-top:2px;
+    margin-bottom: 15px;
+    margin-left: 52px;
+}
+.footer_3 div{
+    float: left;
+    margin-left: 55px;
+}

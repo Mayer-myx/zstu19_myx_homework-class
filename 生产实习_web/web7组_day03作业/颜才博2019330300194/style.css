@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/*清除浮动产生影响的样式*/
+
+.clearFloat:after{
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearFloat{
+    zoom: 1;
+}
+@media screen and (min-width: 992px){
+    .wrap .intr,.wrap .message{
+        float: left;
+    }
+    .intr{
+        width: 300px;
+        height: 700px;
+        background-color: #6ecadc;
+    }
+    .user{
+        margin-top: 30px;
+    }
+    .user h1{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .user div{
+        border: 3px solid #fff;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .way{
+        margin-left: 50px;
+    }
+    .way h3{
+        color: #fff;
+        margin-top: 30px;
+    }
+    .way p{
+        margin-top: 10px;
+    }
+    .top{
+        margin-top: 30px;
+    }
+    .top a{
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
+    .contact{
+        margin-top: 30px;
+        width: 150px;
+        height: 35px;
+        background-color: #6ecadc;
+        text-align: center;
+        color: white;
+        line-height: 35px;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .edit input{
+        margin-left: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        width: 550px;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .edit textarea{
+        margin-left: 50px;
+        height: 300px;
+        margin-bottom: 15px;
+        width: 550px;
+        font-size: 16px;
+        padding-left: 10px;
+        font-family: inherit;
+        padding-top: 10px;
+    }
+    .edit button{
+        width: 70px;
+        height: 30px;
+        background-color: orange;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        margin-left: 50px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intr {
+        width: 100%;
+        height: 330px;
+        background-color: #6ecadc;
+    }
+    .intr .user,.intr .way{
+        float: left;
+        background-color: #6ecadc;
+    }
+    .user{
+        margin-top: 20px;
+    }
+    .user h1{
+        color: #fff;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .user div{
+        border: 3px solid #fff;
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .way{
+        margin-left: 230px;
+        margin-top: 60px;
+
+    }
+    .way h3{
+        color: #fff;
+        margin-top: 10px;
+    }
+    .top{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .top a{
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
+    .contact{
+        margin-top: 30px;
+        width: 150px;
+        height: 35px;
+        background-color: #6ecadc;
+        text-align: center;
+        color: white;
+        line-height: 35px;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .edit input{
+        margin-left: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        width: 550px;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .edit textarea{
+        margin-left: 50px;
+        height: 300px;
+        margin-bottom: 15px;
+        width: 550px;
+        font-size: 16px;
+        padding-left: 10px;
+        font-family: inherit;
+        padding-top: 10px;
+    }
+    .edit button{
+        width: 70px;
+        height: 30px;
+        background-color: orange;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        margin-left: 50px;
+        font-weight: bold;
+    }
+}

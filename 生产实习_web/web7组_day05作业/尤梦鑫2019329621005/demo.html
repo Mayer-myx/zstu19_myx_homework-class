@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var inTime = new Date('2019/6/19');
+    var outTime = new Date(inTime);
+    outTime.setFullYear(outTime.getFullYear()+3);
+    var conTime = new Date(outTime);
+    conTime.setMonth(conTime.getMonth()-1);
+    if(conTime.getDay()==0){
+        conTime.setDate(conTime.getDate()-2);
+    }
+    else if(conTime.getDay()==6){
+        conTime.setDate(conTime.getDate()-1);
+    }
+    console.log(inTime.toLocaleDateString());
+    console.log(outTime.toLocaleDateString());
+    console.log(conTime.toLocaleDateString());
+</script>
+</body>
+</html>

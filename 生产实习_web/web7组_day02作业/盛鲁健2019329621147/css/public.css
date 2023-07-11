@@ -1,0 +1,25 @@
+/******公共样式*****/
+html,body{
+    width: 100%;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearFloat:after{
+    content:'';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearFloat{
+    zoom: 1;
+}

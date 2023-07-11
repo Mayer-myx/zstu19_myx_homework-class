@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>day5homework</title>
+	</head>
+	<body>
+		<script>
+			var entryTime = new Date('2019/06/19');
+			console.log('入职时间：' + entryTime.toLocaleDateString());
+
+			var dueTime = new Date(entryTime);
+			dueTime.setFullYear(dueTime.getFullYear() + 3);
+			console.log('合同到期时间：' + dueTime.toLocaleDateString());
+
+			var renewTime = new Date(dueTime);
+			renewTime.setMonth(renewTime.getMonth() - 1);
+			var day = renewTime.getDay();
+			if(day == 6){
+				renewTime.setDay(day - 2);
+			}else if(day == 0){
+				renewTime.setDay(day - 1);
+			}
+			console.log('续签合同时间：' + renewTime.toLocaleDateString());
+		</script>
+	</body>
+</html>

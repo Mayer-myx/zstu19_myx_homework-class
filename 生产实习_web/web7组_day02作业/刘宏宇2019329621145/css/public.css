@@ -1,0 +1,27 @@
+/******公共样式******/
+html,body{
+    width: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    /*去掉列表项前面的样式*/
+}
+a{
+    text-decoration: none;
+    /*去掉a标签的下划线*/
+}
+/*清除浮动产生影响的样式*/
+.clearFloat:after{
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearFloat{
+    zoom: 1;
+}

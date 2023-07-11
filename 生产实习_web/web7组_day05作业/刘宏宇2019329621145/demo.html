@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>8.27作业</title>
+</head>
+<body>
+    <script>
+        //创建Date对象，保存员工的入职时间2019/6/19
+        var inTime = new Date('2019/6/19');
+        console.log('入职时间为：'+inTime.toLocaleDateString());
+        //3年后合同到期，计算到期时间；
+        var outTime = new Date(inTime);
+        outTime.setFullYear(outTime.getFullYear()+3);
+        console.log('到期时间为：'+outTime.toLocaleDateString());
+        //合同到期前1个月续签合同，如果是周末，提前到周五，计算续签时间，
+        var newTime = new Date(outTime);
+        newTime.setMonth(newTime.getMonth()-1);
+        if(newTime.getDay() == 0){
+            newTime.setDate(newTime.getDate()-2);
+        }
+        if(newTime.getDay() == 6){
+            newTime.setDate(newTime.getDate()-1);
+        }
+        console.log('续签时间为：'+newTime.toLocaleDateString());
+    </script>
+</body>
+</html>

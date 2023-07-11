@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var inTime=new Date('2019/06/19');
+    var outTime=new Date(inTime);
+    console.log('入职时间：'+inTime.toLocaleDateString());
+    //计算到期时间
+    outTime.setFullYear(inTime.getFullYear()+3);
+    console.log('到期时间：'+outTime.toLocaleDateString());
+    //复制时间为签约时间
+    var signTime=new Date(outTime);
+    //提前一个月
+    signTime.setMonth(signTime.getMonth()-1);
+    //判断是否为周末
+    if(signTime.getDay()==0){  //周日  提前两天
+        signTime.setDate(signTime.getDate()-2);
+    }else if(signTime.getDay()==6){  //周六  提前1天
+        signTime.setDate(signTime.getDate()-1);
+    }
+    console.log('续签时间：'+signTime.toLocaleDateString());
+</script>
+</body>
+</html>

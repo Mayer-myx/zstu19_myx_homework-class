@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>day05homework</title>
+	</head>
+	<body>
+		<script>
+			/* 创建Date对象，保存员工的入职时间2019/6/19 */
+			var entryTime = new Date('2019/06/19');
+			console.log('入职时间：' + entryTime.toLocaleDateString());
+			
+			/* 3年后合同到期，计算到期时间； */
+			var dueTime = new Date(entryTime);
+			dueTime.setFullYear(dueTime.getFullYear() + 3);
+			console.log('合同到期时间：' + dueTime.toLocaleDateString());
+			
+			/* 合同到期前1个月续签合同，如果是周末，提前到周五 */
+			var renewTime = new Date(dueTime);
+			//提前一个月
+			renewTime.setMonth(renewTime.getMonth() - 1);
+			var day = renewTime.getDay();
+			if(day == 6){
+				//如果是周六，提前1天
+				renewTime.setDate(renewTime.getDate() - 1);
+			}else if(day == 0){
+				//如果是周日，提前2天
+				renewTime.setDate(renewTime.getDate() - 2);
+			}
+			console.log('续签合同时间：' + renewTime.toLocaleDateString());
+		</script>
+	</body>
+</html>

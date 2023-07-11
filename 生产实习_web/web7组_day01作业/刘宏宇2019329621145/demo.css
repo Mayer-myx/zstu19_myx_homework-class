@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+.center div{
+    float: left;
+    margin:  30px 50px;
+}
+.center div img{
+    width: 50px;
+    height: 50px;
+}
+.center div p{
+    font-size: 12px;
+}

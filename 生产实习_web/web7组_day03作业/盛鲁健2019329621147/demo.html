@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*响应式页面*/
+        /*电脑*/
+        @media screen and (min-width: 992px){
+            .center{
+                width: 1000px;
+                height: 200px;
+                border: 1px solid red;
+            }
+            .center div{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                float: left;
+            }
+        }
+        /*ipad*/
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .center div{
+                width: 48%;
+                height: 200px;
+                border: 1px solid black;
+                float: left;
+            }
+        }
+        /*手机*/
+        @media screen and (max-width: 768px){
+            .center div{
+                width: 99%;
+                height: 200px;
+                border: 1px solid black;
+            }
+        }
+        /*  电脑：>992px  ipad:768-992px  <768iphone*/
+    </style>
+</head>
+<body>
+
+<!-- 媒体查询 css3 ：根据显示设备屏幕宽度的不同制定不同的样式去匹配-->
+
+<div class="center">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+</body>
+</html>

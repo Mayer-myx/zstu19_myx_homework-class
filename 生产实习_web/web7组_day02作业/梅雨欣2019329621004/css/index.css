@@ -1,0 +1,236 @@
+.wrap{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.header,.nav,.banner,.content,.study,.ge,.center,.footer{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header .logo,.header .search,.header .icon{
+    float: left;
+}
+
+.logo img{
+    width: 127px;
+}
+
+.search div{
+    float: left;
+}
+
+.search input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    padding-left: 4px;
+}
+
+.header .search{
+    margin-left: 100px;
+    margin-top: 6px;
+}
+
+.icon p{
+    float: left;
+    width: 70px;
+    height: 20px;
+    border-right: 1px solid #e3e3e3;
+    text-align: center;
+}
+
+.search img{
+    /*设置光标样式*/
+    cursor: pointer;
+}
+
+.icon p a{
+    color: #bbb;
+    font-size: 14px;
+}
+
+.header .icon{
+    margin-top: 10px;
+}
+
+.login{
+	/*右边框线宽度*/
+    border-right-width: 0 ;
+}
+
+.nav a{
+	margin-right: 50px;
+	font-size: 16px;
+	color: #bbb;
+}
+
+.nav .active{
+    color: #0aa1ed;
+}
+
+.banner{
+    margin-top: 10px;
+}
+.banner img{
+    height: 400px;
+}
+
+.content img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.content .con1{
+    background-color: #1fa2ea;
+ }
+ 
+.content .con2{
+    background-color: #c5fad8;
+    margin-right: 11px;
+    margin-left: 11px;
+}
+
+.content .con3{
+    background-color: #e69ba9;
+}
+
+.study h3,.study p{
+    float: left;
+}
+
+.study p{
+    background-color:#000 ;
+    color: #fff;
+    padding: 0 15px;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.ge div{
+    float: left;
+}
+
+.ge .r_1{
+    background-color: #e8e8e8;
+    margin-right: 10px;
+}
+
+.ge p{
+    background-color: #e8e8e8;
+}
+
+.r-1 {
+    margin-bottom: 10px;
+}
+
+.l1{
+    margin-bottom: 10px;
+}
+
+.img1,.img2,.img3{
+    float: left;
+    height: 245px;
+    width: 326px;
+    margin-bottom: 10px;
+}
+
+.content img{
+    width: 100%;
+    height: 100%;
+}
+
+.img1{
+    background-color: #1fa2ea;
+}
+
+.img2{
+    margin-left: 11px;
+    margin-right: 11px;
+    background-color: #c5fad8;
+}
+
+.img3{
+    background-color: #e69ba9;
+}
+
+.ge{
+    margin-top: 46px;
+}
+
+.study{
+    margin-bottom: 15px;
+}
+
+.study h3,.study p{
+    float: left;
+}
+
+.study h3{
+    margin-right: 16px;
+}
+
+.study p{
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    width: 120px;
+    margin-top: 3px;
+    padding: 2px 15px;
+}
+
+.center{
+	margin-top: 10px;
+	padding:0, 50px;
+}
+.center div{
+    width: 250px;
+    float: left;
+    text-align: center;	
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.center image{
+    margin-bottom:10px;
+}
+
+.center p{
+    font-size:16px;
+    color:#333333;
+}
+
+.footer .footer_1,.footer .footer_2,.footer .footer_3{
+    float: left;
+}
+
+.footer{
+    margin-top: 60px;
+}
+
+.footer_2{
+	margin-left: 80px;
+}
+.footer_2 ul{
+    float: left;
+    margin-right: 62px;
+}
+
+.footer_2 li:nth-child(1){
+    margin-bottom: 32px;
+    font-weight: bolder;
+}
+
+.footer_2 li:nth-child(2){
+    margin-bottom: 28px;
+    color: grey;
+}
+
+.footer_2 li:nth-child(3){
+    color: grey;
+}
+
+.footer_3 div{
+    float: left;
+}

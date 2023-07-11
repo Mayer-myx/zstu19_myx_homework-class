@@ -1,0 +1,160 @@
+.wrap{
+    width:100%;
+    background-color:#f5f5f5;
+}
+.header,.nav,.banner,.content,.guild,.study,.ge,.center,.footer{
+    width:1000px;
+    /*height:200px;*/
+    /*border:1px solid red;*/
+    margin:0 auto;
+}
+.header .logo,.header .search,.header .icon{
+    float:left;
+}
+.search div{
+    float:left;
+}
+.logo img{
+    width:127px;
+}
+.search input{
+    width:300px;
+    height: 30px;
+    outline: none;
+    padding-left:4px;
+}
+.header .search{
+    margin-left:100px;
+    margin-top:6px;
+}
+.icon p{
+    float:left;
+    width:70px;
+    height:20px;
+    border-right:1px solid #e3e3e3;
+    text-align:center;
+}
+.search img{
+    cursor: pointer;
+    /*设置光标样式*/
+}
+.icon p a{
+    color:#bbb;
+    font-size:14px;
+}
+.header .icon{
+    margin-top:10px;
+}
+.icon .login{
+    border-right-width:0;
+    /*右边框线为0*/
+}
+.nav{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.nav a{
+    color:#bbb;
+    font-size:16px;
+    margin-right:50px;
+}
+.nav .active{
+    color:#0aa1ed;
+}
+.content div{
+    width:326px;
+    height:245px;
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.content .con2{
+    background: #c5fad8;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+.content .con1{
+    background: #1fa2ea;
+}
+.content .con3{
+    background: #e69ba9;
+}
+.study div{
+    margin-top:46px;
+    margin-bottom:15px;
+    float:left;
+}
+.study .stu1{
+    margin-right: 16px;
+    color:#333333;
+}
+.study .stu2{
+    font-size:14px;
+    color:#fff;
+    padding-left:17px;
+    padding-right:17px;
+    background:#333333;
+}
+.ge div{
+    float:left;
+    margin-bottom:10px;
+}
+.ge .r1{
+    background: #e8e8e8;
+    margin-right: 10px;
+}
+.ge p{
+    background: #e8e8e8;
+}
+.r_1{
+    margin-bottom: 10px;
+}
+.center div{
+    width:250px;
+    margin-top:50px;
+    margin-bottom:50px;
+    float: left;
+    text-align:center;
+}
+*{
+    padding:0;
+    margin:0;
+}
+.center image{
+    margin-bottom:10px;
+}
+.center p{
+    font-size:16px;
+    color:#333333;
+}
+.footer .footer_1,.footer .footer_2,.footer .footer_3{
+    margin-top:60px;
+    float:left;
+}
+.footer_1{
+    margin-right:100px;
+}
+.footer_2 ul{
+    float: left;
+}
+.footer_2 ul li{
+    margin-right:62px;
+}
+.footer_2 .l1,.footer_2 .l2,.footer_2 .l3{
+    margin-top:32px;
+    margin-bottom:28px;
+}
+.footer_3 div{
+    float:left;
+}
+.footer_3 .p1{
+    margin-top: 17px;
+    margin-bottom: 8px;
+}
+.footer_3 p{
+    font-size:14px;
+    color:#333333;
+}
+.footer_3 .f1{
+    margin-left:10px;
+}

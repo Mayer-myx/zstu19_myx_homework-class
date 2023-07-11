@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            let date = new Date("6/19/2019 00:00:00");
+            document.getElementById('ruzhi').innerHTML = date.toLocaleDateString();
+            date.setFullYear(date.getFullYear() + 3);
+            document.getElementById('daoqi').innerHTML = date.toLocaleDateString();
+            if (date.getDay() === 0) {
+                date.setDate(date.getDate()-2)
+            } else if (date.getDate() === 6) {
+                date.setDate(date.getDate()-1)
+
+            }
+            document.getElementById('xuqian').innerHTML = date.toLocaleDateString();
+        }
+    </script>
+</head>
+
+<body>
+入职时间
+<div id="ruzhi"></div>
+<br>
+到期时间
+<div id="daoqi"></div>
+<br>
+续签时间
+<div id="xuqian"></div>
+<br>
+</body>
+</html>

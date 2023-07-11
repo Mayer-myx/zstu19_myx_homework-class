@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 992px){
+
+    .left{
+        width: 200px;
+        height: 560px;
+        background-color: #6ecadc;
+    }
+
+    .left,.right{
+        float: left;
+    }
+    .left_1 h3{
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .left_1 div{
+        border: 3px solid #fff;
+        margin: 5px auto 10px;
+        width: 170px;
+        height: 170px;
+        background: url("head.jpg") no-repeat ;
+        background-size: 170px 170px;
+    }
+    .left_2{
+        margin-left:12px ;
+    }
+    .left_2 h4{
+        color:#fff;
+        margin-top: 20px;
+    }
+    .left_2 p{
+        font-size: 12px;
+    }
+    .right a{
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+    }
+    .contact{
+        width: 115px;
+        height: 32px;
+        background-color: #6ecadc;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        line-height: 32px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+
+    }
+    .right a{
+        color:#000000;
+    }
+    .right .right_top{
+        margin-top: 8px;
+    }
+    .name input{
+        width: 400px;
+        height: 30px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+
+    }
+    .name textarea{
+        width: 400px;
+        height: 200px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    .name button{
+        width: 70px;
+        height: 30px;
+        background-color: orange;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .left{
+        width: 100%;
+        background-color: #6ecadc;
+    }
+    .left_1{
+        margin-left: 20px;
+
+    }
+    .left_1 h3{
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .left_1 div{
+        border: 3px solid #fff;
+        margin: 5px auto 10px;
+        width: 150px;
+        height: 150px;
+        background: url("head.jpg") no-repeat ;
+        background-size: 150px 150px;
+    }
+
+    .left_1,.left_2{
+        float: left;
+    }
+    .left_2{
+        margin-left: 300px;
+
+    }
+    .left_2 h4{
+        color:#fff;
+        margin-top: 20px;
+    }
+    .left_2 p{
+        font-size: 12px;
+    }
+    .right .right_top{
+        margin-top: 8px;
+    }
+    .right a{
+        margin-left: 50px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+    }
+    .contact{
+        width: 115px;
+        height: 32px;
+        background-color:  #6ecadc;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        line-height: 32px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+    }
+    .name input{
+        width: 400px;
+        height: 30px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    .name textarea{
+        width: 400px;
+        height: 200px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    .name button{
+        width: 70px;
+        height: 30px;
+        background-color: orange;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+.clearFloat:after{
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearFloat{
+    zoom: 1;
+}

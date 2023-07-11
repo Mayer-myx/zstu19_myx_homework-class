@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--创建Date对象，保存员工的入职时间2019/6/19-->
+<!--3年后合同到期，计算到期时间；合同到期前1个月续签合同，如果是周末，提前到周五，计算续签时间，打印出三个时间的本地日期字符串格式-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>day05homework</title>
+	</head>
+	<body>
+		<script>
+			var entryDate = new Date('2019/06/19');
+			console.log('入职时间：' + entryDate.toLocaleDateString());
+			
+			var dueTime = new Date(entryDate);
+			dueTime.setFullYear(dueTime.getFullYear() + 3);
+			console.log('合同到期时间：' + dueTime.toLocaleDateString());
+			
+			var renewDate = new Date(dueTime);
+			renewDate.setMonth(renewDate.getMonth() - 1);
+			var day = renewDate.getDay();
+			if(day == 6){
+				renewDate.setDate(renewDate.getDate()-2);
+			}else if(day == 0){
+				renewDate.setDate(renewDate.getDate()-2);
+			}
+			console.log('续签合同时间：' + renewDate.toLocaleDateString());
+		</script>
+	</body>
+</html>
