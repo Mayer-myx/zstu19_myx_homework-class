@@ -1,0 +1,39 @@
+BODY {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 5px; FONT-SIZE: 13px; PADDING-BOTTOM: 2px; MARGIN: 1px; COLOR: #0058ab; PADDING-TOP: 2px; FONT-FAMILY: ??‹ÛArial, sans-serif
+}
+.content {
+	PADDING-RIGHT: 2px; MARGIN-TOP: 2px; PADDING-LEFT: 2px; FONT-SIZE: 13px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; WIDTH: 130px; COLOR: #ffffff; LINE-HEIGHT: 20px; PADDING-TOP: 2px; FONT-FAMILY: ??‹ÛArial, sans-serif; BACKGROUND-COLOR: #0058ab
+}
+.customBackground {
+	BACKGROUND-COLOR: #0058ab
+}
+.trContent {
+	BACKGROUND: url(/hep/images/banner/menumid02.gif) no-repeat 0px 0px
+}
+#leftColumn {
+	PADDING-LEFT: 10px; FLOAT: left
+}
+#dhtmlgoodies_listMenu A {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+#dhtmlgoodies_listMenu UL LI A {
+	FONT-WEIGHT: normal; COLOR: #ffffff
+}
+#dhtmlgoodies_listMenu UL LI UL LI A {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.9em; COLOR: #000; FONT-STYLE: italic
+}
+#dhtmlgoodies_listMenu .activeMenuLink {
+	COLOR: blue
+}
+#dhtmlgoodies_listMenu LI {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; LIST-STYLE-TYPE: none
+}
+#dhtmlgoodies_listMenu {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; PADDING-TOP: 1px
+}
+#dhtmlgoodies_listMenu UL {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; PADDING-TOP: 1px
+}
+#dhtmlgoodies_listMenu UL {
+	PADDING-RIGHT: 1px; DISPLAY: none; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN-LEFT: 10px; PADDING-TOP: 1px
+}

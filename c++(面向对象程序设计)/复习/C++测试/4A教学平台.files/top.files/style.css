@@ -1,0 +1,451 @@
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.locateTitle {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.toolBar {
+	BACKGROUND-POSITION: left center; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../../images/b.gif); PADDING-BOTTOM: 3px; COLOR: #3199bd; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+.toolButton {
+	BORDER-RIGHT: #000000 1px dashed; BORDER-TOP: #000000 1px dashed; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px dashed; COLOR: #677787; BORDER-BOTTOM: #000000 1px dashed; FONT-FAMILY: "??‰— "??¦¯GB2312";
+	font-size: 14px;
+	font-weight: bold;
+	color: 3199BD;
+	text-decoration: none;
+}
+.desktopIcon {
+	color: 677787;
+	text-decoration: none;
+}
+desktopIcon:link {
+	color: 677787;
+	text-decoration: none;
+	font-size: 9px;
+
+}
+desktopIcon:visited {
+	font-size: 9px;
+	color: 677787;
+	text-decoration: none;
+
+}
+desktopIcon:hover {
+	font-size: 9px;
+	color: 677787;
+}
+desktopIcon:active {
+	font-size: 9px;
+	color: 677787;
+}
+a:link {
+	font-size: 12px;
+	text-decoration: none;
+	color: #333333;
+
+}
+a:hover {
+	font-size: 12px;
+	text-decoration: none;
+	color: #333333;
+
+}
+a:active {
+	font-size: 12px;
+	text-decoration: none;
+	color: #333333;
+
+}
+a:visited {
+	font-size: 12px;
+	text-decoration: none;
+	color: #0066b3;
+
+}
+.navMain {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.navBg {
+	background-color: D0D9E0;
+	color: #DFE2EA;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+
+}
+.bulletin {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #000000;
+}
+.funcBlock {
+	font-family: "??‰— "??¦¯GB2312"; TEXT-DECORATION: none
+}
+.funcNotes {
+	FONT-SIZE: 12px; COLOR: #677787; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.moduleName {
+	FONT-SIZE: 12px; COLOR: #0066ff; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.tipWelcome {
+	FONT-SIZE: 12px; COLOR: #ff9900; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.navTip {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #003366; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.tblMain {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BACKGROUND-COLOR: #f9fbfc
+}
+.tblMain THEAD {
+	FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/bg_mainTbl_thead.gif); COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.tblMainHead {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/bg_mainTbl_thead.gif); COLOR: #000000; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.tblMainTr {
+	BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BACKGROUND-COLOR: #d8e3f3; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+.mainTblTdSel {
+	BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BORDER-RIGHT-WIDTH: 0px
+}
+.tblMainTr2 {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.tblMainHeadSc {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/bg_mainTbl_thead.gif); COLOR: #677787; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.tblMainTrSc {
+	BORDER-RIGHT: #0066b3 1px; BORDER-TOP: #0066b3 1px dashed; FONT-SIZE: 12px; BORDER-LEFT: #0066b3 1px; COLOR: #000000; BORDER-BOTTOM: #0066b3 1px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BACKGROUND-COLOR: #f1f6fc; TEXT-DECORATION: none
+}
+.mainTblTdSelSc {
+	BORDER-RIGHT: #0066b3 6px; BORDER-TOP: #0066b3 6px dotted; FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-LEFT: #0066b3 6px; COLOR: #000000; BORDER-BOTTOM: #0066b3 6px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.tblMainTr2Sc {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.navBgLeft {
+	BACKGROUND-COLOR: #e1e7f1
+}
+.navMainLeft {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #7e97c5; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+P {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 20px; FONT-FAMILY: "??", "???"
+}
+TABLE {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+THEAD {
+	FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/bg_mainTbl_thead.gif); COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.errTip {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffcc00; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.xbutton {
+	BORDER-RIGHT: #002d96 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #002d96 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#9DBCEA); BORDER-LEFT: #002d96 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #002d96 1px solid
+}
+.xxbutton {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: ??; HEIGHT: 18px; BACKGROUND-COLOR: #d0d9e0
+}
+.xtext {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px solid; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BACKGROUND-COLOR: #ffffff; align: "center"
+	valign="middle"
+}
+.xxtext {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #000000 1px solid; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BACKGROUND-COLOR: #ffffff; align: "center"
+	valign="middle"
+}
+.xfile {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px solid; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BACKGROUND-COLOR: #ffffff; align: "center"
+	valign="middle"
+}
+.table {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #ffffff; FONT-SIZE: 12px; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: #ccd5dd; SCROLLBAR-SHADOW-COLOR: #6c829d; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #808080; SCROLLBAR-TRACK-COLOR: #dce6ef; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; SCROLLBAR-DARKSHADOW-COLOR: #677787; BACKGROUND-COLOR: #ffffff
+}
+.roleSel {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.roleUnSel {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.loList {
+	DISPLAY: block; LIST-STYLE-POSITION: outside; FONT-SIZE: 12px; LEFT: 50px; LIST-STYLE-IMAGE: url(../../images/arrow_green.gif); MARGIN: 0px 0px 0px 10px; COLOR: #330033; TEXT-INDENT: -15px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TOP: 50px; TEXT-DECORATION: none
+}
+loList:link {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+loList:visited {
+	FONT-SIZE: 12px; COLOR: #0066b3; TEXT-DECORATION: none
+}
+loList:hover {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+loList:active {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+.orgText {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; WORD-SPACING: 2em; COLOR: #ff0000; LINE-HEIGHT: 250%; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; LETTER-SPACING: 8px
+}
+.printedText {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 18px; WORD-SPACING: 2em; BORDER-LEFT: medium none; COLOR: #000000; LINE-HEIGHT: 250%; BORDER-BOTTOM: medium none; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; LETTER-SPACING: 8px; BACKGROUND-COLOR: transparent
+}
+.globalNav {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.curNavTitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 14px; COLOR: #ffffff; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.navTitle {
+	FONT-SIZE: 12px; COLOR: #006ec1; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.curNav {
+	MARGIN-TOP: 20px; FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN-BOTTOM: 20px; COLOR: #006ec1; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.curNavTip {
+	MARGIN-TOP: 30px; FONT-SIZE: 12px; MARGIN-LEFT: 20px; COLOR: #999999; TEXT-INDENT: 20pt; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.curNavSplitter {
+	BORDER-TOP-STYLE: none; BORDER-BOTTOM: #999999 1px dotted; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.copyright {
+	BORDER-TOP: #999999 1px solid; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.curNavBorder {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid
+}
+.mainTable {
+	BORDER-RIGHT: #c6ced3 1px solid; BORDER-TOP: #c6ced3 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #c6ced3 1px solid; COLOR: #003333; LINE-HEIGHT: 20px; BORDER-BOTTOM: #c6ced3 1px solid; BACKGROUND-COLOR: #f8f8f8; TEXT-DECORATION: none
+}
+TBODY {
+	BORDER-RIGHT: #999999 1px dashed; BORDER-TOP: #999999 1px dashed; FONT-SIZE: 12px; BORDER-LEFT: #999999 1px dashed; COLOR: #666666; BORDER-BOTTOM: #999999 1px dashed; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.mainTd {
+	
+}
+.mainTdHead {
+	BORDER-TOP: #ffffff 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND-IMAGE: url(/hep/images/listTableHeadBg.jpg); BORDER-LEFT: #ffffff 1px solid; COLOR: #ffffff; LINE-HEIGHT: 20px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: "??"; BACKGROUND-COLOR: #f8f8f8
+}
+.toolboxBorder {
+	WIDTH: 150px; COLOR: #000000; BACKGROUND-COLOR: #336666
+}
+.toolboxTitle {
+	PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 0.7em; COLOR: #ffffff; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 5px; BACKGROUND-COLOR: #336666
+}
+.toolboxBody {
+	PADDING-LEFT: 4px; FONT-SIZE: 0.8em; COLOR: #000000; FONT-FAMILY: Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #eeeeee
+}
+.moduleBorder {
+	COLOR: #000000; BACKGROUND-COLOR: #336699
+}
+.moduleHead {
+	COLOR: #000000; BACKGROUND-COLOR: #336699
+}
+.moduleBody {
+	FONT-SIZE: 0.8em
+}
+.moduleTitle {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+.moduleTitlePm {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.8em; COLOR: #ffffff; FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+TD.actionBarc2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TD.actionBarc1 {
+	PADDING-RIGHT: 0px
+}
+.actionType {
+	FONT-WEIGHT: bold
+}
+.actionItemInactive {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+A.actionItem {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: 1px solid; TEXT-DECORATION: none
+}
+A.actionItem:hover {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #999999 1px solid
+}
+.actionTypePm {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.9em
+}
+.actionItemPm {
+	BORDER-RIGHT: #eeeeee 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #eeeeee 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 2px; BORDER-LEFT: #eeeeee 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #eeeeee 1px solid
+}
+A.actionItemPm {
+	TEXT-DECORATION: none
+}
+A.actionItemPm:hover {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #999999 1px solid
+}
+A.actionItemPm:link {
+	COLOR: #0000ff; BACKGROUND-COLOR: #f0f0f0
+}
+A.actionItemPm:visited {
+	COLOR: #0000ff; BACKGROUND-COLOR: #f0f0f0
+}
+.bMedium {
+	BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-COLOR: #cccccc; COLOR: #990000; BORDER-TOP-COLOR: #cccccc; BACKGROUND-COLOR: #cccccc; BORDER-RIGHT-COLOR: #cccccc
+}
+.bLight {
+	BORDER-LEFT-COLOR: #eeeeee; BORDER-BOTTOM-COLOR: #eeeeee; COLOR: #000000; BORDER-TOP-COLOR: #eeeeee; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT-COLOR: #eeeeee
+}
+TD {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.bWhite {
+	COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
+.bLight {
+	BORDER-LEFT-COLOR: #eeeeee; BORDER-BOTTOM-COLOR: #eeeeee; COLOR: #000000; BORDER-TOP-COLOR: #eeeeee; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT-COLOR: #eeeeee
+}
+.bLight A {
+	BORDER-LEFT-COLOR: #eeeeee; BORDER-BOTTOM-COLOR: #eeeeee; COLOR: #000000; BORDER-TOP-COLOR: #eeeeee; BORDER-RIGHT-COLOR: #eeeeee
+}
+.bMedium {
+	BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-COLOR: #cccccc; COLOR: #990000; BORDER-TOP-COLOR: #cccccc; BACKGROUND-COLOR: #cccccc; BORDER-RIGHT-COLOR: #cccccc
+}
+.titlebar {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.3em
+}
+.inlineAction {
+	BORDER-RIGHT: #cccccc 1px outset; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px outset; PADDING-LEFT: 5px; FONT-SIZE: 0.85em; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 5px; BORDER-LEFT: #cccccc 1px outset; COLOR: #003366; MARGIN-RIGHT: 5px; BORDER-BOTTOM: #cccccc 1px outset; BACKGROUND-COLOR: #eeeeee
+}
+A.inlineAction:link {
+	TEXT-DECORATION: none
+}
+A.inlineAction:visited {
+	BORDER-RIGHT: #eeeeee 1px outset; BORDER-TOP: #eeeeee 1px outset; BORDER-LEFT: #eeeeee 1px outset; COLOR: #003366; BORDER-BOTTOM: #eeeeee 1px outset; TEXT-DECORATION: none
+}
+A.inlineAction:hover {
+	BORDER-RIGHT: #eeeeee 1px inset; BORDER-TOP: #eeeeee 1px inset; BORDER-LEFT: #eeeeee 1px inset; COLOR: #006699; BORDER-BOTTOM: #eeeeee 1px inset; TEXT-DECORATION: none
+}
+A.inlineAction:active {
+	BORDER-RIGHT: #eeeeee 1px inset; BORDER-TOP: #eeeeee 1px inset; BORDER-LEFT: #eeeeee 1px inset; COLOR: #006699; BORDER-BOTTOM: #eeeeee 1px inset; TEXT-DECORATION: none
+}
+.stepTable {
+	BORDER-RIGHT: #dde0e3 1px solid; BORDER-TOP: #dde0e3 1px solid; BORDER-LEFT: #dde0e3 1px solid; BORDER-BOTTOM: #dde0e3 1px solid
+}
+.viewTable {
+	BORDER-RIGHT: #1fabcd 1px solid; BORDER-TOP: #1fabcd 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #1fabcd 1px solid; COLOR: #003333; LINE-HEIGHT: 20px; BORDER-BOTTOM: #1fabcd 1px solid; BACKGROUND-COLOR: #f8f8f8; TEXT-DECORATION: none
+}
+.viewTableHead {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BORDER-LEFT: #ffffff 1px solid; COLOR: #ffffff; LINE-HEIGHT: 20px; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: "??"; BACKGROUND-COLOR: #f8f8f8
+}
+.view-odd {
+	BACKGROUND-COLOR: #eeeeee
+}
+.view-even {
+	BACKGROUND-COLOR: #ffffff
+}
+.search-form TR {
+	VERTICAL-ALIGN: top
+}
+.search-form .search-search-label {
+	PADDING-TOP: 4px
+}
+.search-form LABEL {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.search-form INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.search-form SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.search-form TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.search-table TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.search-table TH {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.search-table TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ccc 0px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 0px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid
+}
+.search-table TABLE TABLE {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.search-table TABLE TABLE TD {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.search-table TABLE TABLE TH {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.search-table THEAD TH {
+	BORDER-TOP: #369 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #fff; BORDER-BOTTOM: #369 1px solid; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #69c; TEXT-ALIGN: center
+}
+.search-table THEAD .search-first {
+	BORDER-LEFT: #666 1px solid
+}
+.search-table THEAD .search-last {
+	BORDER-RIGHT: #666 1px solid
+}
+.search-table THEAD .search-first {
+	BORDER-LEFT: #666 1px solid
+}
+.search-table THEAD .search-last {
+	BORDER-RIGHT: #666 1px solid
+}
+.search-table THEAD .search-first-last {
+	BORDER-RIGHT: #666 1px solid; BORDER-LEFT: #666 1px solid
+}
+.search-table TBODY .search-first-last {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid
+}
+.search-table TFOOT .search-first-last {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid
+}
+.search-table TBODY .search-first {
+	BORDER-LEFT: #ccc 1px solid
+}
+.search-table TBODY .search-category-name {
+	BORDER-LEFT: #ccc 1px solid
+}
+.search-table TFOOT .search-first {
+	BORDER-LEFT: #ccc 1px solid
+}
+.detailTable {
+	BORDER-RIGHT: #bbbbbb 1px solid; BORDER-TOP: #bbbbbb 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #bbbbbb 1px solid; COLOR: #003333; LINE-HEIGHT: 30px; BORDER-BOTTOM: #bbbbbb 1px solid; BACKGROUND-COLOR: #f8f8f8; TEXT-DECORATION: none
+}
+.onlyReadTable {
+	BORDER-TOP: #95aec4 1px solid; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 20px; BORDER-BOTTOM: #95aec4 1px solid; BACKGROUND-COLOR: #eaf1f5; TEXT-DECORATION: none
+}
+.onlyReadTablerRoundConer {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 20px; BORDER-BOTTOM: #95aec4 1px solid; TEXT-DECORATION: none
+}
+.onlyReadTablerBottom {
+	BORDER-RIGHT: #95aec4 1px solid; FONT-SIZE: 14px; BORDER-LEFT: #95aec4 1px solid; COLOR: #000000; LINE-HEIGHT: 30px; BORDER-BOTTOM: #95aec4 1px solid; HEIGHT: 35px; TEXT-DECORATION: none
+}
+.onlyReadTablerContent {
+	FONT-SIZE: 12px; BORDER-LEFT: #95aec4 1px solid; COLOR: #000000; LINE-HEIGHT: 35px; BORDER-BOTTOM: #95aec4 1px solid; TEXT-DECORATION: none
+}
+.onlyReadTablerContentCell {
+	BORDER-RIGHT: #95aec4 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #95aec4 1px solid; COLOR: #000000; TEXT-INDENT: 10px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.contenttitle01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #660066; FONT-FAMILY: "??"
+}
+.cont-title01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; FONT-FAMILY: "??"
+}
+.edit-title01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0690d6; FONT-FAMILY: "??"
+}

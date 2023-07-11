@@ -1,0 +1,217 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0123)http://210.32.24.127/hep/taglib/navbar/navigation.jsp?target=content&roleId=1&parentFuncId=2&funcGroupId=1&enterTarget=null -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<SCRIPT type=text/javascript>
+	
+	var activeMenuItem = new Array();
+	
+	function isUlInArray(inputObj,ulObj){
+		while(inputObj && inputObj.id!='dhtmlgoodies_listMenu'){
+			if(inputObj==ulObj)return true;
+			inputObj = inputObj.parentNode;			
+		}		
+		return false;
+	}
+	
+	function showHideSub(e,inputObj)
+	{
+		
+
+		if(!inputObj)inputObj=this;
+		var parentObj = inputObj.parentNode;
+		var ul = parentObj.getElementsByTagName('UL')[0];
+		if(activeMenuItem.length>0){
+			for(var no=0;no<activeMenuItem.length;no++){
+				if(!isUlInArray(ul,activeMenuItem[0]) && !isUlInArray(activeMenuItem[0],ul)){
+					activeMenuItem[no].style.display='none';
+					activeMenuItem.splice(no,1);
+					no--;
+				}
+			}			
+		}
+		if(ul.offsetHeight == 0){
+			ul.style.display='block';
+			activeMenuItem.push(ul);
+		}else{
+			ul.style.display='none';
+		}
+	}
+	
+	function showHidePath(inputObj)
+	{
+		var startTag = inputObj;
+		showHideSub(false,inputObj);
+		inputObj = inputObj.parentNode;
+		while(inputObj){			
+			inputObj = inputObj.parentNode;
+			if(inputObj.tagName=='LI')showHideSub(false,inputObj.getElementsByTagName('A')[0]);
+			if(inputObj.id=='dhtmlgoodies_listMenu')inputObj=false;	
+		}		
+	}
+	
+	function initMenu()
+	{
+		var obj = document.getElementById('dhtmlgoodies_listMenu');
+		var linkCounter=0;
+		var aTags = obj.getElementsByTagName('A');
+		var activeMenuItem = false;
+		var activeMenuLink = false;
+		var thisLocationArray = location.href.split(/\//);
+		var fileNameThis = thisLocationArray[thisLocationArray.length-1];
+		if(fileNameThis.indexOf('?')>0)fileNameThis = fileNameThis.substr(0,fileNameThis.indexOf('?'));
+		if(fileNameThis.indexOf('#')>0)fileNameThis = fileNameThis.substr(0,fileNameThis.indexOf('#'));
+
+		for(var no=0;no<aTags.length;no++){
+			var parent = aTags[no].parentNode;
+			var subs = parent.getElementsByTagName('UL');
+			if(subs.length>0){
+				aTags[no].onclick = showHideSub;	
+				linkCounter++;
+				aTags[no].id = 'aLink' + linkCounter;
+			}	
+			
+			if(aTags[no].href.indexOf(fileNameThis)>=0 && aTags[no].href.charAt(aTags[no].href.length-1)!='#'){				
+				if(aTags[no].parentNode.parentNode){								
+					var parentObj = aTags[no].parentNode.parentNode.parentNode;
+					var a = parentObj.getElementsByTagName('A')[0];
+					if(a.id && !activeMenuLink){
+						
+						activeMenuLink = aTags[no];
+						activeMenuItem = a.id;
+					}
+				}
+			}		
+		}		
+
+		if(activeMenuLink){
+			activeMenuLink.className='activeMenuLink';
+		}
+		if(activeMenuItem){
+			if(document.getElementById(activeMenuItem))showHidePath(document.getElementById(activeMenuItem));	
+		}
+	}
+	window.onload = initMenu;
+	</SCRIPT>
+
+<META content="MSHTML 6.00.2900.5897" name=GENERATOR></HEAD>
+<BODY>
+<STYLE type=text/css>@import url( /hep/taglib/navbar/themes/winxp/center2.css );
+.myCursor {
+	CURSOR: hand
+}
+</STYLE>
+
+<TABLE cellSpacing=0 cellPadding=0 width="93%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=left><IMG height=60 
+      src="navigation.files/midBarleft.gif" width=11> </TD>
+    <TD vAlign=bottom align=left>
+      <TABLE height=24 cellSpacing=0 cellPadding=0 width=140 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top align=left height=24><IMG height=41 
+            src="navigation.files/menutitle02.png" 
+width=140></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width=140 border=0>
+        <TBODY>
+        <TR>
+          <TD class=customBackground vAlign=top height=250>
+            <TABLE class=content height=130 cellSpacing=0 cellPadding=0 
+            width=130 align=center border=0>
+              <TBODY>
+              <TR>
+                <TD class=trContent vAlign=top align=left>
+                  <DIV id=mainContainer>
+                  <DIV id=topBar></DIV>
+                  <DIV id=leftColumn>
+                  <UL id=dhtmlgoodies_listMenu>
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    href="http://210.32.24.127/hep/do/bulletin?action=page&amp;act=view&amp;type=index" 
+                    target=content>课程公告</A> 
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    class=myCursor>授课计划</A> 
+                    <UL>
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/instructionPlan?action=page&amp;mark=student&amp;showMark=all" 
+                      target=content>进入学习</A> </LI></UL>
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    class=myCursor>课程</A> 
+                    <UL>
+                      <LI><A href="http://210.32.24.127/hep/course/LMSIndex.jsp" 
+                      target=content>课程学习</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/fileManage?action=list_all&amp;type=res" 
+                      target=content>课程资源</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/course/course_info.jsp" 
+                      target=content>课程信息</A> </LI></UL>
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    class=myCursor>作业</A> 
+                    <UL>
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/paper?action=doPaper&amp;plan_mark=navigation" 
+                      target=content>做作业</A> 
+                      <LI><A href="http://210.32.24.127/hep/do/exam?action=page" 
+                      target=content>自测</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/paper?action=exhibition" 
+                      target=content>优秀作业</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/stuPaperStat?action=list" 
+                      target=content>作业统计</A> </LI></UL>
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    class=myCursor>答疑</A> 
+                    <UL>
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/questionlist?action=showQuestionlist" 
+                      target=content>所有问题</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/questionnew?action=showNewQuestion" 
+                      target=content>提新问题</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/myquestion?action=showMyQuestion" 
+                      target=content>我的问题</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/questionCollection?action=showFavorite" 
+                      target=content>我的收藏夹</A> 
+                      <LI><A 
+                      href="http://210.32.24.127/hep/question/questionQuery.jsp" 
+                      target=content>问题查询</A> </LI></UL>
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    href="http://210.32.24.127/hep/do/bbsSubject?action=broad&amp;parentId=0&amp;type=index" 
+                    target=content>讨论交流</A> 
+                    <UL>
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/bbsSubject?action=broad&amp;parentId=0" 
+                      target=content>讨论区</A> </LI></UL>
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    class=myCursor>学习活动</A> 
+                    <UL>
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/activityGrouping?action=studentPage" 
+                      target=content>活动学习</A> </LI></UL>
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    href="http://210.32.24.127/hep/res/index.jsp" 
+                    target=content>资源库</A> 
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    href="http://210.32.24.127/hep/do/subject?type=index&amp;action=page" 
+                    target=content>课程笔记</A> 
+                    <LI><IMG src="navigation.files/arrow.gif">&nbsp;&nbsp;<A 
+                    class=myCursor>学习档案</A> 
+                    <UL>
+                      <LI><A 
+                      href="http://210.32.24.127/hep/do/stuStat?action=bbs&amp;userId=&amp;courseId=" 
+                      target=content>学生档案</A> 
+              </LI></UL></LI></UL></DIV></DIV></TD></TR></TBODY></TABLE>
+            <P>&nbsp;</P>
+            <P>&nbsp;</P>
+            <P>&nbsp;</P></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><IMG height=9 src="navigation.files/menubottom02.gif" 
+          width=140></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=top align=middle width="100%" 
+bgColor=#f8f4e8></TD></TR></TBODY></TABLE></BODY></HTML>

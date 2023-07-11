@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0049)http://210.32.24.127/hep/taglib/navbar/toogle.htm -->
+<!--
+	//written by wangrui
+--><HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE type=text/css>.o1 {
+	FONT-SIZE: 10px; COLOR: #ffffff; BACKGROUND-COLOR: #718bd6; TEXT-DECORATION: none
+}
+BODY {
+	MARGIN: 0px; BACKGROUND-COLOR: #f6f6f6
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #0066b3; TEXT-DECORATION: none
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+<!--
+var iniCols, noCols, o_mf, o_ms, s, o_mmf , o_mmmf;
+var iniOutCols , noOutCols , clickerWidth , innerLeftWidth;
+function ini() {
+	o_mf = window.parent.parent.document.getElementById("4a_main");
+	o_mmf = window.parent.document.getElementById("mainframe");
+	o_ms = document.getElementById("menuSwitch");
+	noCols = iniCols = o_mmf.cols;
+	noOutCols = iniOutCols = o_mf.cols;
+	if ((pos = noCols.indexOf(",")) != -1) {
+		clickerWidth = noCols.substring(pos+1)
+		noCols = "0" + noCols.substring(pos);
+	}
+	if ((pos = noOutCols.indexOf(",")) != -1) {
+		noOutCols = clickerWidth + noOutCols.substring(pos);
+	}
+	s = false;
+}
+function changeLeft(){
+	s = !s;
+	o_mmf.cols = s ? noCols : iniCols;
+	o_mf.cols = s ? noOutCols : iniOutCols;
+	o_ms.innerHTML = s ? "<img src='/hep/images/switch1_1.gif' border='0'>" : "<img src='/hep/images/switch1_2.gif' border='0'>";
+}
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.5897" name=GENERATOR></HEAD>
+<BODY onload=ini()>
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><A id=menuSwitch href="javascript:changeLeft();"><IMG 
+      src="toogle.files/switch1_2.gif" border=0></A> 
+</TD></TR></TBODY></TABLE></BODY></HTML>

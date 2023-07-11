@@ -1,0 +1,21 @@
+.test01 {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.title03 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.box02 {
+	BORDER-RIGHT: #cccccc 1px dotted; BORDER-TOP: #cccccc 1px dotted; BORDER-LEFT: #cccccc 1px dotted; BORDER-BOTTOM: #cccccc 1px dotted
+}
+.box01 {
+	BORDER-RIGHT: #0066ff 2px solid; BORDER-TOP: #0066ff 2px solid; BORDER-LEFT: #0066ff 2px solid; BORDER-BOTTOM: #0066ff 2px solid
+}
+.title01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #000000; FONT-FAMILY: "??"
+}
+.title02 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #0066ff; FONT-FAMILY: "??"
+}
+.box03 {
+	BORDER-RIGHT: #0099ff 1px; BORDER-TOP: #0099ff 1px; BORDER-LEFT-COLOR: #0099ff; BORDER-BOTTOM: #0099ff 1px solid; BORDER-LEFT-STYLE: none
+}

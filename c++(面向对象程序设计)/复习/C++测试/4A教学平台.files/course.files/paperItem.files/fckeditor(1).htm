@@ -1,0 +1,230 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0116)http://210.32.24.127/hep/taglib/wysiwyg/newHtmlEditor2/editor/fckeditor.html?InstanceName=answer1642&Toolbar=Default -->
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2007 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * Main page that holds the editor.
+--><HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>FCKeditor</TITLE>
+<META content="noindex, nofollow" name=robots>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=Cache-Control content=public>
+<SCRIPT type=text/javascript>
+
+// Instead of loading scripts and CSSs using inline tags, all scripts are
+// loaded by code. In this way we can guarantee the correct processing order,
+// otherwise external scripts and inline scripts could be executed in an
+// unwanted order (IE).
+
+function LoadScript( url )
+{
+	document.write( '<scr' + 'ipt type="text/javascript" src="' + url + '" onerror="alert(\'Error loading \' + this.src);"><\/scr' + 'ipt>' ) ;
+}
+
+function LoadCss( url )
+{
+	document.write( '<link href="' + url + '" type="text/css" rel="stylesheet" onerror="alert(\'Error loading \' + this.src);" />' ) ;
+}
+
+// Main editor scripts.
+var sSuffix = /msie/.test( navigator.userAgent.toLowerCase() ) ? 'ie' : 'gecko' ;
+
+LoadScript( 'js/fckeditorcode_' + sSuffix + '.js' ) ;
+
+// Base configuration file.
+LoadScript( '../fckconfig.js' ) ;
+
+	</SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+if ( FCKBrowserInfo.IsIE )
+{
+	// Remove IE mouse flickering.
+	try
+	{
+		document.execCommand( 'BackgroundImageCache', false, true ) ;
+	}
+	catch (e)
+	{
+		// We have been reported about loading problems caused by the above
+		// line. For safety, let's just ignore errors.
+	}
+
+	// Create the default cleanup object used by the editor.
+	FCK.IECleanup = new FCKIECleanup( window ) ;
+	FCK.IECleanup.AddItem( FCKTempBin, FCKTempBin.Reset ) ;
+	FCK.IECleanup.AddItem( FCK, FCK_Cleanup ) ;
+}
+
+// The config hidden field is processed immediately, because
+// CustomConfigurationsPath may be set in the page.
+FCKConfig.ProcessHiddenField() ;
+
+// Load the custom configurations file (if defined).
+if ( FCKConfig.CustomConfigurationsPath.length > 0 )
+	LoadScript( FCKConfig.CustomConfigurationsPath ) ;
+
+	</SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+// Load configurations defined at page level.
+FCKConfig_LoadPageConfig() ;
+
+FCKConfig_PreProcess() ;
+
+// Load the active skin CSS.
+LoadCss( FCKConfig.SkinPath + 'fck_editor.css' ) ;
+
+// Load the language file.
+FCKLanguageManager.Initialize() ;
+LoadScript( 'lang/' + FCKLanguageManager.ActiveLanguage.Code + '.js' ) ;
+
+	</SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+// Initialize the editing area context menu.
+FCK_ContextMenu_Init() ;
+
+FCKPlugins.Load() ;
+
+	</SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+// Set the editor interface direction.
+window.document.dir = FCKLang.Dir ;
+
+// Activate pasting operations.
+if ( FCKConfig.ForcePasteAsPlainText || FCKConfig.AutoDetectPasteFromWord )
+	FCK.Events.AttachEvent( 'OnPaste', FCK.Paste ) ;
+
+	</SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+window.onload = function()
+{
+	InitializeAPI() ;
+
+	if ( FCKBrowserInfo.IsIE )
+		FCK_PreloadImages() ;
+	else
+		LoadToolbarSetup() ;
+}
+
+function LoadToolbarSetup()
+{
+	FCKeditorAPI._FunctionQueue.Add( LoadToolbar ) ;
+}
+
+function LoadToolbar()
+{
+	var oToolbarSet = FCK.ToolbarSet = FCKToolbarSet_Create() ;
+
+	if ( oToolbarSet.IsLoaded )
+		StartEditor() ;
+	else
+	{
+		oToolbarSet.OnLoad = StartEditor ;
+		oToolbarSet.Load( FCKURLParams['Toolbar'] || 'Default' ) ;
+	}
+}
+
+function StartEditor()
+{
+	// Remove the onload listener.
+	FCK.ToolbarSet.OnLoad = null ;
+
+	FCKeditorAPI._FunctionQueue.Remove( LoadToolbar ) ;
+
+	FCK.Events.AttachEvent( 'OnStatusChange', WaitForActive ) ;
+
+	// Start the editor.
+	FCK.StartEditor() ;
+}
+
+function WaitForActive( editorInstance, newStatus )
+{
+	if ( newStatus == FCK_STATUS_ACTIVE )
+	{
+		if ( FCKBrowserInfo.IsGecko )
+			FCKTools.RunFunction( window.onresize ) ;
+
+		_AttachFormSubmitToAPI() ;
+
+		FCK.SetStatus( FCK_STATUS_COMPLETE ) ;
+
+		// Call the special "FCKeditor_OnComplete" function that should be present in
+		// the HTML page where the editor is located.
+		if ( typeof( window.parent.FCKeditor_OnComplete ) == 'function' )
+			window.parent.FCKeditor_OnComplete( FCK ) ;
+	}
+}
+
+// Gecko browsers doens't calculate well that IFRAME size so we must
+// recalculate it every time the window size changes.
+if ( FCKBrowserInfo.IsGecko )
+{
+	function Window_OnResize()
+	{
+		if ( FCKBrowserInfo.IsOpera )
+			return ;
+
+		var oCell = document.getElementById( 'xEditingArea' ) ;
+
+		var eInnerElement = oCell.firstChild ;
+		if ( eInnerElement )
+		{
+			eInnerElement.style.height = 0 ;
+			eInnerElement.style.height = oCell.scrollHeight - 2 ;
+		}
+	}
+	window.onresize = Window_OnResize ;
+}
+
+	</SCRIPT>
+
+<META content="MSHTML 6.00.2900.5897" name=GENERATOR></HEAD>
+<BODY>
+<TABLE style="TABLE-LAYOUT: fixed; HEIGHT: 100%" cellSpacing=0 cellPadding=0 
+width="100%">
+  <TBODY>
+  <TR id=xToolbarRow style="DISPLAY: none">
+    <TD id=xToolbarSpace style="OVERFLOW: hidden">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR id=xCollapsed style="DISPLAY: none">
+          <TD class=TB_Expand id=xExpandHandle colSpan=3><IMG 
+            class=TB_ExpandImg height=4 alt="" 
+            src="fckeditor(1).files/spacer.gif" width=8></TD></TR>
+        <TR id=xExpanded style="DISPLAY: none">
+          <TD class=TB_SideBorder id=xTBLeftBorder 
+          style="DISPLAY: none; WIDTH: 1px"></TD>
+          <TD class=TB_Collapse id=xCollapseHandle style="DISPLAY: none" 
+          vAlign=bottom><IMG class=TB_CollapseImg height=4 alt="" 
+            src="fckeditor(1).files/spacer.gif" width=8></TD>
+          <TD class=TB_ToolbarSet id=xToolbar></TD>
+          <TD class=TB_SideBorder 
+style="WIDTH: 1px"></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD id=xEditingArea style="HEIGHT: 100%" 
+vAlign=top></TD></TR></TBODY></TABLE></BODY></HTML>
